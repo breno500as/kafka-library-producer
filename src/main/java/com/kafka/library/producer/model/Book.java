@@ -1,9 +1,17 @@
 package com.kafka.library.producer.model;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class Book {
 
+	@NotNull
 	private Integer id;
+	
+	@NotBlank
 	private String name;
+	
+	@NotBlank
 	private String autor;
 
 	public Book(Integer id, String name, String autor) {

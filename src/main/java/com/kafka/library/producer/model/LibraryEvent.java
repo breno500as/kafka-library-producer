@@ -1,8 +1,12 @@
 package com.kafka.library.producer.model;
 
+import javax.validation.Valid;
+
 public class LibraryEvent {
 
 	private Integer id;
+	
+	@Valid
 	private Book book;
 	private Integer libraryEventId;
 	private LibraryEventType libraryEventType;
